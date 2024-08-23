@@ -17,3 +17,9 @@ Make sure you have Python installed on your system. You'll also need `Flask` and
 
 ```bash
 pip install Flask gunicorn
+
+Running the Application
+Clone this repository:
+git clone https://github.com/yourusername/caesar-cipher-decryption-tool.git
+cd caesar-cipher-decryption-tool
+
