@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Cryptography Tool{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Caesar Cipher</a></li>
+            <li><a href="{{ url_for('substitution_cipher') }}">Substitution Cipher</a></li>
+            <li><a href="{{ url_for('rsa') }}">RSA</a></li>
+            <li><a href="{{ url_for('md5') }}">MD5</a></li>
+            <li><a href="{{ url_for('sha') }}">SHA</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        {% block content %}
+        <!-- Page content will go here -->
+        {% endblock %}
+    </div>
+</body>
+</html>
